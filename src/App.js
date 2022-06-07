@@ -6,6 +6,7 @@ import { UseStateWithArray } from "./UseStateWithArray";
 import { UseStateWithArrayOfObjects } from "./UseStateWithArrayOfObjects";
 import { FetchingData } from "./FetchingData";
 import { FetchDataById } from "./FetchingDataById";
+import { Parent } from "./useContext/parent";
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
       {/* <UseStateWithArray /> */}
       {/* <UseStateWithArrayOfObjects /> */}
       {/* <FetchingData /> */}
-      <FetchDataById />
+      {/* <FetchDataById /> */}
+      <Parent />
     </div>
   );
 }
