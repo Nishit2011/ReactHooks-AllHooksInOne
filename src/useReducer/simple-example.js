@@ -54,14 +54,7 @@ export const Simple = () => {
         dispatch({ type: "ErrorPhotos", payload: "Something Went Wrong!" })
       );
   };
-  const renderData = () => {
-    console.log(state);
-    if (state.header === "Posts") {
-      state.val.map((el) => <div key={el.id}>{el.title}</div>);
-    } else if (state.header === "Photos") {
-      state.val.map((el) => <div key={el.id}>{el.url}</div>);
-    }
-  };
+
   return (
     <div>
       <button onClick={(e) => getPosts(e)}>Get Posts</button>
