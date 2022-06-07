@@ -7,6 +7,7 @@ import { UseStateWithArrayOfObjects } from "./UseStateWithArrayOfObjects";
 import { FetchingData } from "./FetchingData";
 import { FetchDataById } from "./FetchingDataById";
 import { Parent } from "./useContext/parent";
+import { Simple } from "./useReducer/simple-example";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <UseStateWithArrayOfObjects /> */}
       {/* <FetchingData /> */}
       {/* <FetchDataById /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <Simple />
     </div>
   );
 }
