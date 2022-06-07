@@ -4,6 +4,7 @@ import { SimpleUseState } from "./SimpleUseState";
 import { UseStateWithObject } from "./UseStateWithObject";
 import { UseStateWithArray } from "./UseStateWithArray";
 import { UseStateWithArrayOfObjects } from "./UseStateWithArrayOfObjects";
+import { FetchingData } from "./FetchingData";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       {/* <SimpleUseState /> */}
       {/* <UseStateWithObject /> */}
       {/* <UseStateWithArray /> */}
-      <UseStateWithArrayOfObjects />
+      {/* <UseStateWithArrayOfObjects /> */}
+      <FetchingData />
     </div>
   );
 }
