@@ -21,6 +21,10 @@ export const FetchingData = () => {
       });
   };
 
+  const cleanPage = () => {
+    setRes([]);
+  };
+
   useEffect(() => {}, [loading]);
   return (
     <div>
@@ -28,6 +32,7 @@ export const FetchingData = () => {
       {!loading ? (
         <>
           <button onClick={(e) => getPosts(e)}>Get Posts</button>
+          <button onClick={(e) => cleanPage(e)}>Clean</button>
           {res.map((el) => (
             <div key={el.id}>
               <span>{el.id}.</span>
