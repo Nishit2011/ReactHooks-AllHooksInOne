@@ -66,7 +66,16 @@ export const Simple = () => {
     <div>
       <button onClick={(e) => getPosts(e)}>Get Posts</button>
       <button onClick={(e) => getPhotos(e)}>Get Photos</button>
-      {state.loading === false ? <div> {renderData()}</div> : <></>}
+      {state.header === "Posts" && !state.loading ? (
+        state.val.map((el) => <div key={el.id}>{el.title}</div>)
+      ) : (
+        <></>
+      )}
+      {state.header === "Photos" && !state.loading ? (
+        state.val.map((el) => <div key={el.id}>{el.url}</div>)
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
