@@ -8,6 +8,7 @@ import { FetchingData } from "./FetchingData";
 import { FetchDataById } from "./FetchingDataById";
 import { Parent } from "./useContext/parent";
 import { Simple } from "./useReducer/simple-example";
+import { MultipleReducers } from "./useReducer/multipleReducers";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <FetchingData /> */}
       {/* <FetchDataById /> */}
       {/* <Parent /> */}
-      <Simple />
+      {/* <Simple /> */}
+      <MultipleReducers />
     </div>
   );
 }
