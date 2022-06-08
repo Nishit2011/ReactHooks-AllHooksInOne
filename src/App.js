@@ -13,6 +13,7 @@ import { PostIndex } from "./useReducer/reducersAndContext/PostIndex";
 import CallbackExample from "./UseCallback/CallbackExample";
 import ParentMemo from "./useMemo/ParentMemo";
 import ParentUseRef from "./useRef/ParentUseRef";
+import ParentCounter from "./CustomHook/ParentCounter";
 
 export default function App() {
   return (
@@ -29,7 +30,8 @@ export default function App() {
       {/* <PostIndex /> */}
       {/* <CallbackExample /> */}
       {/* <ParentMemo /> */}
-      <ParentUseRef />
+      {/* <ParentUseRef /> */}
+      <ParentCounter />
     </div>
   );
 }
