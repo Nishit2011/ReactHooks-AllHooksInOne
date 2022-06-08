@@ -1,6 +1,8 @@
 import React from "react";
 
-export const Title = () => {
+function Title() {
   console.log("Title component");
   return <div>useCallback example</div>;
-};
+}
+
+export default React.memo(Title);

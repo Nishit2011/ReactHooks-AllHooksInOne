@@ -10,7 +10,7 @@ import { Parent } from "./useContext/parent";
 import { Simple } from "./useReducer/simple-example";
 import { MultipleReducers } from "./useReducer/multipleReducers";
 import { PostIndex } from "./useReducer/reducersAndContext/PostIndex";
-import { CallbackExample } from "./UseCallback.js/CallbackExample";
+import CallbackExample from "./UseCallback.js/CallbackExample";
 
 export default function App() {
   return (

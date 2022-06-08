@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Count = (props) => {
-  console.log("Count component");
+function Count(props) {
+  console.log(`Count component ${props.text}`);
   return (
     <div>
       <div>
@@ -9,4 +9,6 @@ export const Count = (props) => {
       </div>
     </div>
   );
-};
+}
+
+export default React.memo(Count);

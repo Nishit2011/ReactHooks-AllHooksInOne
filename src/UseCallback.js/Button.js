@@ -1,10 +1,12 @@
 import React from "react";
 
-export const Button = (props) => {
-  console.log("Button component");
+function Button(props) {
+  console.log(`Button component ${props.children}`);
   return (
     <div>
       <button onClick={props.handler}>{props.children}</button>
     </div>
   );
-};
+}
+
+export default React.memo(Button);
