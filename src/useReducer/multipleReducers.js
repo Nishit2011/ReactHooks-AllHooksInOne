@@ -47,7 +47,9 @@ export const MultipleReducers = () => {
       />
 
       <button onClick={() => getPostById()}>Get Post{state.num}</button>
-      <div>{postState.post?.title}</div>
+      <div>
+        {postState.post?.id} - {postState.post?.title}
+      </div>
     </div>
   );
 };

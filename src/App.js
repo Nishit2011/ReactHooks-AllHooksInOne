@@ -9,6 +9,8 @@ import { FetchDataById } from "./FetchingDataById";
 import { Parent } from "./useContext/parent";
 import { Simple } from "./useReducer/simple-example";
 import { MultipleReducers } from "./useReducer/multipleReducers";
+import { PostIndex } from "./useReducer/reducersAndContext/PostIndex";
+import { CallbackExample } from "./UseCallback.js/CallbackExample";
 
 export default function App() {
   return (
@@ -21,7 +23,9 @@ export default function App() {
       {/* <FetchDataById /> */}
       {/* <Parent /> */}
       {/* <Simple /> */}
-      <MultipleReducers />
+      {/* <MultipleReducers /> */}
+      {/* <PostIndex /> */}
+      <CallbackExample />
     </div>
   );
 }
