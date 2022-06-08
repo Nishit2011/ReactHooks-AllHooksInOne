@@ -11,6 +11,7 @@ import { Simple } from "./useReducer/simple-example";
 import { MultipleReducers } from "./useReducer/multipleReducers";
 import { PostIndex } from "./useReducer/reducersAndContext/PostIndex";
 import CallbackExample from "./UseCallback/CallbackExample";
+import ParentMemo from "./useMemo/ParentMemo";
 
 export default function App() {
   return (
@@ -25,7 +26,8 @@ export default function App() {
       {/* <Simple /> */}
       {/* <MultipleReducers /> */}
       {/* <PostIndex /> */}
-      <CallbackExample />
+      {/* <CallbackExample /> */}
+      <ParentMemo />
     </div>
   );
 }
