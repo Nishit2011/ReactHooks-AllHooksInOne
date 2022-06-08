@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import Button from "./Button";
 import Count from "./Count";
 import Title from "./Title";
@@ -7,14 +7,14 @@ import Title from "./Title";
 function CallbackExample() {
   const [age, setAge] = useState(25);
   const [salary, setSalary] = useState(25000);
-  const increaseAge = () => {
+  const increaseAge = useCallback(() => {
     console.log("age");
     setAge((prevState) => prevState + 1);
-  };
-  const increaseSalary = () => {
+  }, [age]);
+  const increaseSalary = useCallback(() => {
     console.log(" salary");
     setSalary((prevState) => prevState + 1000);
-  };
+  }, [salary]);
 
   return (
     <div>
