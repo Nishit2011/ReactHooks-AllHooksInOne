@@ -14,7 +14,6 @@ import CallbackExample from "./UseCallback/CallbackExample";
 import ParentMemo from "./useMemo/ParentMemo";
 import ParentUseRef from "./useRef/ParentUseRef";
 import ParentCounter from "./CustomHook/ParentCounter";
-import Search from "./Redux/components/Search";
 
 export default function App() {
   return (
@@ -33,7 +32,6 @@ export default function App() {
       {/* <ParentMemo /> */}
       {/* <ParentUseRef /> */}
       {/* <ParentCounter /> */}
-      <Search />
     </div>
   );
 }
