@@ -14,6 +14,7 @@ import CallbackExample from "./UseCallback/CallbackExample";
 import ParentMemo from "./useMemo/ParentMemo";
 import ParentUseRef from "./useRef/ParentUseRef";
 import ParentCounter from "./CustomHook/ParentCounter";
+import ParentFR from "./ForwardingRef/ParentFR";
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
       {/* <ParentMemo /> */}
       {/* <ParentUseRef /> */}
       {/* <ParentCounter /> */}
+      <ParentFR />
     </div>
   );
 }
