@@ -34,9 +34,9 @@ export default function App() {
       {/* <CallbackExample /> */}
       {/* <ParentMemo /> */}
       {/* <ParentUseRef /> */}
-      {/* <ParentCounter /> */}
+      <ParentCounter />
       {/* <ParentFR /> */}
-      <Tbl />
+      {/* <Tbl /> */}
     </div>
   );
 }

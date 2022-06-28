@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useDebugValue, useState } from "react";
 
 function useCounter(initialVal, val) {
   const [countVal, setCountVal] = useState(initialVal);
